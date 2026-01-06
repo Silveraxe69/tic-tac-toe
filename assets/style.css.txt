@@ -1,0 +1,104 @@
+/* Global Dark Futuristic Background */
+body {
+    background: #0d0d0d !important;
+    color: #fff !important;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Fade Transition */
+.fade-screen {
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Startup Screen */
+#startup-screen {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.title-glow {
+    font-size: 70px;
+    color: #00eaff;
+    text-shadow: 0 0 20px #00eaff;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { text-shadow: 0 0 20px #00eaff; }
+    50% { text-shadow: 0 0 50px #00eaff; }
+}
+
+.press-start {
+    margin-top: 50px;
+    font-size: 22px;
+    color: #aaa;
+    animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: .3; }
+    100% { opacity: 1; }
+}
+
+/* Name Screen */
+.name-title {
+    font-size: 45px;
+    color: #00eaff;
+    text-align: center;
+}
+
+/* Game Header */
+.header-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.turn-indicator {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00eaff;
+}
+
+/* Grid Buttons */
+button {
+    height: 120px !important;
+    font-size: 55px !important;
+    background: #111 !important;
+    color: #00eaff !important;
+    border: 2px solid #00eaff !important;
+    border-radius: 10px !important;
+    box-shadow: 0 0 10px #00eaff;
+}
+
+button:hover {
+    background: #004d66 !important;
+}
+
+/* Winner Popup */
+.winner {
+    text-align: center;
+    font-size: 45px;
+    margin-top: 20px;
+    color: #00ff95;
+    text-shadow: 0 0 20px #00ff95;
+}
+
+/* Timer Bar */
+#timer-bar {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #00eaff, #ff0080);
+    animation: timerAnim linear 10s forwards;
+}
+
+@keyframes timerAnim {
+    from { width: 100%; }
+    to { width: 0%; }
+}
